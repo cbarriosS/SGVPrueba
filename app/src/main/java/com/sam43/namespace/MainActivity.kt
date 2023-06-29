@@ -7,19 +7,15 @@
 package com.sam43.namespace
 
 import android.annotation.SuppressLint
-import android.annotation.TargetApi
-import android.os.Build
 import android.os.Bundle
 import android.webkit.JavascriptInterface
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.namespace.R
-import com.example.namespace.databinding.ActivityMainBinding
+import com.sam43.namespace.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -62,8 +58,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun callVM() {
-        val url = "file:///C:/Users/cbarrios/Downloads/svg%20(1).svg"
-        //val url = "https://svgshare.com/i/Gzd.svg"
+        val url = "file:///android_asset/mapa.svg"
+        //val url = "https://svgshare.com/i/ugT.svg"
         try {
             fileDownloaderVM.downloadFileFromServer(url)
                 .observe(this, Observer { responseBody ->

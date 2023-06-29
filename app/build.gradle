@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.namespace'
+    namespace 'com.sam43.namespace'
     compileSdkVersion 33
     buildToolsVersion "30.0.3"
     defaultConfig {
